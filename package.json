@@ -1,0 +1,22 @@
+{
+  "name": "testcontracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "abi-decoder": "^1.1.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "ethereumjs-abi": "^0.6.5",
+    "solc": "^0.4.23",
+    "zeppelin-solidity": "^1.7.0"
+  }
+}
