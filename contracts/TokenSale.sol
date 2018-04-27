@@ -1,8 +1,8 @@
-import "zeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
+import "zeppelin-solidity/contracts/crowdsale/emission/AllowanceCrowdsale.sol";
 import "zeppelin-solidity/contracts/ownership/Ownable.sol";
 pragma solidity ^0.4.18;
 
-contract TokenSale is Ownable, Crowdsale {
+contract TokenSale is Ownable, AllowanceCrowdsale {
 
   uint public tokensSold = 0;
 
@@ -14,6 +14,7 @@ contract TokenSale is Ownable, Crowdsale {
   )
   public
    Crowdsale(_rate, _wallet, _token)
+   AllowanceCrowdsale(_tokenWallet)
   {
    }
 }
